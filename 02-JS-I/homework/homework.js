@@ -27,32 +27,32 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  return str
+  return str;
 }
 
 function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  return x + y
+  return x + y;
 }
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  return x - y
+  return x - y;
 }
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-  return x * y
+  return x * y;
 }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-  return x / y
+  return x / y;
 }
 
 function sonIguales(x, y) {
@@ -69,8 +69,8 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
+  //return (str1.length === str2.length)
   return str1.length === str2.length;
-
   }
 
 function menosQueNoventa(num) {
@@ -96,7 +96,7 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  return x % y
+  return x % y;
 }
 
 function esPar(num) {
@@ -193,7 +193,8 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return "hola" + nombre + "!";
+ // return "hola" + nombre + "!";
+ return 'Hola ' + nombre + '!';
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -215,7 +216,7 @@ function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
 
-return (base + altura / 2) ;
+return (base * altura) / 2 
 }
 
 
@@ -223,7 +224,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
- return ( euro * 1,2 ) ;
+ return  euro * 1.2 
 }
 
 
@@ -233,14 +234,14 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if (letra === "a" || letra === "e" || letra === "i" || letra === "o"|| letra === "u" ); {
-    return "Es vocal";
+  if (letra.length > 1 ) {
+    return "Dato incorrecto" }
+  if (letra === "a" || letra === "e" || letra === "i" || letra === "o"|| letra === "u" ) {
+    return "Es vocal"
   } 
-         if (letra.length > 1 ) {
-       return "Dato incorrecto";
-      } 
-       else ;
-       return "Dato incorrecto" 
+   
+  
+      return "Dato incorrecto" 
   } 
 
 
